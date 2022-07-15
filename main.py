@@ -1,9 +1,12 @@
 import pygame
 pygame.init()
 
+from entity import Dice
 
 screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption("Roll of the Dice")
+
+dice = Dice(screen, 0, 0)
 
 
 while 1:
@@ -15,5 +18,7 @@ while 1:
             exit(0)
         if event.type == pygame.KEYDOWN:
             pass
+
+    dice.draw()
 
     pygame.display.update()
