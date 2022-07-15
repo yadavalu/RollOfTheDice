@@ -6,7 +6,7 @@ class Entity:
         self.rect = pygame.Rect(x, y, width, height)
 
     def draw(self, colour=(255, 0, 0)):
-        pygame.draw.rect(self.surface, (255, 0, 0), self.rect)
+        pygame.draw.rect(self.surface, colour, self.rect)
 
 class Dice(Entity):
     def __init__(self, surface, x, y):
