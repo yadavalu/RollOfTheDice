@@ -5,7 +5,7 @@ class Dice:
         self.surface = surface
         self.rect = pygame.Rect(0, 0, 64, 64)
 
-    def draw():
+    def draw(self):
         pygame.draw.rect(self.surface, (255, 255, 255), self.rect)
 
 class Entity:
@@ -13,5 +13,5 @@ class Entity:
         self.surface = surface
         self.rect = pygame.Rect(x, y, width, height)
 
-    def draw():
+    def draw(self):
         pygame.draw.rect(self.surface, (255, 0, 0), self.rect)
