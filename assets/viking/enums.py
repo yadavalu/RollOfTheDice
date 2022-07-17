@@ -1,0 +1,6 @@
+IDLE = 0
+RUN = 1
+JUMP = 2
+ATTACK = 3
+SHIELD = 4
+DIE = 5
